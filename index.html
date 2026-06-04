@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asalu Sison| Software Developer</title>
+
+  <!-- Google Fonts: Poppins + Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- =================== NOISE OVERLAY =================== -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- =================== CURSOR =================== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- =================== NAVBAR =================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>SA<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+        <li><a href="mailto:sisonasalu@gmail.com" class="nav-cta">Hire Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- =================== HERO =================== -->
+  <section class="hero" id="hero">
+    <!-- Background particles -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text" data-animate="fade-up">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          Available for Work
+        </div>
+        <p class="hero-eyebrow">Hello World, I'm</p>
+        <h1 class="hero-name">
+          Asalu<br />
+          <span class="name-accent">Sison</span>
+        </h1>
+        <div class="hero-role">
+          <span class="role-prefix">// </span>
+          <span id="typed" class="typed-text"></span>
+          <span class="cursor-blink">_</span>
+        </div>
+        <p class="hero-bio">
+          I craft clean, efficient and scalable applications that make a meaningful impact.
+          Turning ideas into digital experiences — one line at a time.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Get In Touch
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/systrades" target="_blank" aria-label="GitHub" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/asalu-syson-syson-b80205231/" target="_blank" aria-label="LinkedIn" class="social-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/256756523902" target="_blank" aria-label="WhatsApp" class="social-link">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:sisonasalu@gmail.com" aria-label="Email" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-animate="fade-left">
+        <div class="photo-frame">
+          <div class="frame-ring frame-ring-1"></div>
+          <div class="frame-ring frame-ring-2"></div>
+          <div class="photo-container">
+            <img src="portfolio.jpg" alt="Sison Asalu — Software Developer" class="profile-img" />
+            <div class="photo-overlay"></div>
+          </div>
+          <!-- Floating chips -->
+          <div class="float-chip chip-js">
+            <i class="fab fa-js-square"></i> JavaScript
+          </div>
+          <div class="float-chip chip-react">
+            <i class="fab fa-react"></i> React
+          </div>
+          <div class="float-chip chip-python">
+            <i class="fab fa-python"></i> Python
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+      <span class="scroll-text">Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- =================== ABOUT =================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">01 — About Me</span>
+        <h2 class="section-title">Who I <span class="title-accent">Am</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col" data-animate="fade-right">
+          <div class="about-img-wrap">
+            <div class="about-img-blob"></div>
+            <img src="portfolio.jpg" alt="Sison Asalu" class="about-img" />
+            <div class="about-img-tag">
+              <i class="fas fa-code"></i>
+              <span>2+ Years Coding</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content" data-animate="fade-left">
+          <h3 class="about-heading">A passionate developer crafting digital experiences</h3>
+          <p class="about-body">
+            I'm a passionate <strong>Software Developer</strong> who enjoys creating
+            clean, efficient and scalable applications. I focus on writing high-quality
+            code, solving complex problems and building technology that makes a meaningful
+            impact in people's lives.
+          </p>
+          <p class="about-body">
+            I'm always learning, improving and exploring new tools and frameworks —
+            because great software is never truly finished.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-item glass-card" data-animate="fade-up">
+              <span class="stat-number" data-count="2">0</span>
+              <span class="stat-plus">+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item glass-card" data-animate="fade-up" style="animation-delay:0.1s">
+              <span class="stat-number" data-count="10">0</span>
+              <span class="stat-plus">+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item glass-card" data-animate="fade-up" style="animation-delay:0.2s">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-plus">+</span>
+              <span class="stat-label">Tech Stacks</span>
+            </div>
+            <div class="stat-item glass-card" data-animate="fade-up" style="animation-delay:0.3s">
+              <span class="stat-number" data-count="100">0</span>
+              <span class="stat-percent">%</span>
+              <span class="stat-label">Committed</span>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="mailto:sisonasalu@gmail.com" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Say Hello
+            </a>
+            <a href="#" class="btn btn-outline" download>
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== SKILLS =================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title">What I Work <span class="title-accent">With</span></h2>
+      </div>
+
+      <div class="skills-layout">
+        <!-- Skill Bars -->
+        <div class="skill-bars-col" data-animate="fade-right">
+          <h3 class="skills-col-title">Core Proficiency</h3>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name"><i class="fab fa-js-square"></i> JavaScript / TypeScript</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="88">
+                <span class="skill-glow"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="82">
+                <span class="skill-glow"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name"><i class="fab fa-react"></i> React / Next.js</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="80">
+                <span class="skill-glow"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name"><i class="fab fa-node-js"></i> Node.js / Express</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="78">
+                <span class="skill-glow"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name"><i class="fas fa-database"></i> Databases (SQL / NoSQL)</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="75">
+                <span class="skill-glow"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name"><i class="fab fa-git-alt"></i> Git / DevOps</span>
+              <span class="skill-pct">72%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="72">
+                <span class="skill-glow"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Tags -->
+        <div class="skill-tags-col" data-animate="fade-left">
+          <h3 class="skills-col-title">Tech Toolkit</h3>
+          <div class="tech-tags">
+            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="tech-tag"><i class="fab fa-js-square"></i> JavaScript</span>
+            <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+            <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+            <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+            <span class="tech-tag"><i class="fas fa-fire"></i> Django</span>
+            <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+            <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+            <span class="tech-tag"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+            <span class="tech-tag"><i class="fab fa-aws"></i> AWS</span>
+            <span class="tech-tag"><i class="fas fa-wind"></i> Tailwind CSS</span>
+            <span class="tech-tag"><i class="fas fa-code"></i> REST APIs</span>
+            <span class="tech-tag"><i class="fas fa-server"></i> GraphQL</span>
+            <span class="tech-tag"><i class="fab fa-linux"></i> Linux</span>
+          </div>
+
+          <!-- Services mini cards -->
+          <div class="service-cards">
+            <div class="service-card glass-card">
+              <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+              <div>
+                <p class="service-name">Frontend Dev</p>
+                <p class="service-desc">Pixel-perfect, responsive UIs</p>
+              </div>
+            </div>
+            <div class="service-card glass-card">
+              <div class="service-icon"><i class="fas fa-server"></i></div>
+              <div>
+                <p class="service-name">Backend Dev</p>
+                <p class="service-desc">Scalable APIs & systems</p>
+              </div>
+            </div>
+            <div class="service-card glass-card">
+              <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+              <div>
+                <p class="service-name">Responsive Design</p>
+                <p class="service-desc">Mobile-first experiences</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== PROJECTS =================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">03 — Projects</span>
+        <h2 class="section-title">What I've <span class="title-accent">Built</span></h2>
+        <p class="section-sub">A selection of projects I'm proud of</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Featured Project -->
+        <article class="project-card project-card--featured glass-card" data-animate="fade-up">
+          <div class="project-featured-label">Featured Project</div>
+          <div class="project-top">
+            <div class="project-icon-wrap">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/systrades/isbat-exam" target="_blank" title="GitHub" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://github.com/systrades/isbat-exam" target="_blank" title="Live Demo" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">ISBAT Exam System</h3>
+          <p class="project-desc">
+            A comprehensive examination management system built for ISBAT University.
+            Handles student registration, exam scheduling, result processing and detailed reporting dashboards.
+          </p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>Node.js</span>
+            <span>Database</span>
+            <span>HTML</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass-card" data-animate="fade-up" style="animation-delay:0.1s">
+          <div class="project-top">
+            <div class="project-icon-wrap">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/systrades/BATCH-2-ASALU" target="_blank" title="GitHub" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://github.com/systrades/BATCH-2-ASALU" target="_blank" title="Live Demo" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Batch 2 — Asalu</h3>
+          <p class="project-desc">
+            A structured batch processing application demonstrating modern software
+            architecture, clean code principles and scalable system design patterns.
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Algorithms</span>
+           
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass-card" data-animate="fade-up" style="animation-delay:0.2s">
+          <div class="project-top">
+            <div class="project-icon-wrap">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/systrades" target="_blank" title="GitHub" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://github.com/systrades" target="_blank" title="Live Demo" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Analytics Dashboard</h3>
+          <p class="project-desc">
+            Interactive data analytics dashboard with real-time charts,
+            filterable data tables, and exportable reports for business insights.
+          </p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Chart.js</span>
+            <span>Node.js</span>
+          </div>
+        </article>
+
+        <!-- More projects CTA -->
+        <article class="project-card project-card--cta" data-animate="fade-up" style="animation-delay:0.3s">
+          <div class="cta-inner">
+            <div class="cta-icon"><i class="fab fa-github"></i></div>
+            <h3 class="project-title">More on GitHub</h3>
+            <p class="project-desc">
+              Constantly building & exploring. Visit my GitHub for all repositories and contributions.
+            </p>
+            <a href="https://github.com/systrades" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fab fa-github"></i> Explore All
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== EXPERIENCE =================== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">04 — Experience</span>
+        <h2 class="section-title">My <span class="title-accent">Journey</span></h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-animate="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Developer</h3>
+                <p class="timeline-company">Freelance / Self-employed</p>
+              </div>
+              <span class="timeline-date">2023 — Present</span>
+            </div>
+            <p class="timeline-body">
+              Building full-stack web applications for clients across Uganda.
+              Specializing in React frontends, Node.js backends, and database design.
+              Delivered scalable, maintainable solutions on time and budget.
+            </p>
+            <div class="timeline-tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--right" data-animate="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Junior Developer</h3>
+                <p class="timeline-company">ISBAT University Projects</p>
+              </div>
+              <span class="timeline-date">2022 — 2023</span>
+            </div>
+            <p class="timeline-body">
+              Developed the university's examination management system handling thousands
+              of students. Collaborated in agile teams, wrote clean documentation, and
+              improved system performance by 40%.
+            </p>
+            <div class="timeline-tags">
+              <span>JavaScript</span><span>Express</span><span>MySQL</span><span>Git</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Computer Science Student</h3>
+                <p class="timeline-company">ISBAT University, Kampala</p>
+              </div>
+              <span class="timeline-date">2021 — 2024</span>
+            </div>
+            <p class="timeline-body">
+              Studied Computer Science with a focus on software engineering and data structures.
+              Built multiple academic projects demonstrating full-stack development skills
+              and a deep interest in clean, efficient code.
+            </p>
+            <div class="timeline-tags">
+              <span>Python</span><span>Java</span><span>Algorithms</span><span>Databases</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CONTACT =================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">05 — Contact</span>
+        <h2 class="section-title">Let's Work <span class="title-accent">Together</span></h2>
+        <p class="section-sub">Have a project in mind? I'd love to hear about it.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info-col" data-animate="fade-right">
+          <p class="contact-intro">
+            I'm currently open to freelance projects and full-time opportunities.
+            Whether you have a question or just want to say hi — my inbox is always open!
+          </p>
+
+          <div class="contact-items">
+            <a href="mailto:sisonasalu@gmail.com" class="contact-item glass-card">
+              <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+              <div class="contact-detail">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">sisonasalu@gmail.com</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://wa.me/256756523902" target="_blank" class="contact-item glass-card">
+              <div class="contact-icon-wrap"><i class="fab fa-whatsapp"></i></div>
+              <div class="contact-detail">
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-value">+256 756 523 902</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/asalu-syson-syson-b80205231/" target="_blank" class="contact-item glass-card">
+              <div class="contact-icon-wrap"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-detail">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">Asalu Syson</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://github.com/systrades" target="_blank" class="contact-item glass-card">
+              <div class="contact-icon-wrap"><i class="fab fa-github"></i></div>
+              <div class="contact-detail">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">@systrades</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-col" data-animate="fade-left">
+          <div class="contact-form-wrap glass-card">
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Project / Collaboration / Other" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+                <span class="btn-loading" style="display:none;">
+                  <i class="fas fa-spinner fa-spin"></i> Sending...
+                </span>
+              </button>
+              <div class="form-success" id="form-success" style="display:none;">
+                <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="footer-logo">
+        <span class="logo-bracket">&lt;</span>SA<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-copy">
+        &copy; 2025 <strong>Sison Asalu</strong> — Designed &amp; built with <span class="heart">&#9829;</span>
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/systrades" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/asalu-syson-syson-b80205231/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/256756523902" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:sisonasalu@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
